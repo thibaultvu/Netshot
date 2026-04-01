@@ -81,12 +81,19 @@ const CLI = {
 		fail: "Telnet access is not supported."
 	},
 	ssh: {
+		config: {
+			terminal: {
+				cols: 200
+				},
+			},
 		macros: {
 			bash: {
+				cmd: "",
 				options: [ "bash", "tmsh" ],
 				target: "bash"
 			},
 			tmsh: {
+				cmd: "",
 				options: [ "bash", "tmsh" ],
 				target: "tmsh"
 			}
